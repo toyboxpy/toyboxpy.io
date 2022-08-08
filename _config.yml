@@ -1,1 +1,42 @@
-theme: jekyll-theme-merlot
+title: toybox.py
+description: A dependency management system for the Playdate console.
+
+repository: DidierMalenfant/toyboxpy.io
+
+exclude:
+  - bin
+  - CNAME
+  - README.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+feed:
+  path: atom.xml
+
+permalink: :title
+
+defaults:
+  - scope:
+      type: posts
+    values:
+      layout: post
+      permalink: :year/:month/:day/:title/
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/toybox-social-card.png
+
+logo: /assets/img/toybox-449x449.png
+
+github:
+  repository_nwo: DidierMalenfant/toyboxpy.io
+
+forkme_nwo: DidierMalenfant/toybox.py
+
+twitter:
+  username: toyboxpy

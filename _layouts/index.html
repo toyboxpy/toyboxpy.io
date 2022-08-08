@@ -1,0 +1,77 @@
+---
+layout: base
+---
+{% assign t = site.data.locales[page.lang][page.lang] %}
+<div id="information">
+  <ul>
+    <li>
+      <div class="group row">
+        <h2 id="install">{{ t.pagecontent.install.install }}</h2>
+        <br>
+        <!--
+        <div class="copyable">
+          {%- highlight bash -%} /bin/bash -c "pip install toybox.py" {%- endhighlight -%}
+        </div>
+        <br>
+        -->
+        <br>
+        <div class="col-1">
+          <p>{{ t.pagecontent.install.paste }}</p>
+        </div>
+        <div class="col-2">
+          <p>{{ t.pagecontent.install.what }}</p>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      <div class="group row">
+        <h2 id="question">{{ t.pagecontent.question }}</h2>
+        <br>
+        <div class="col-1">
+          <p>{{ t.pagecontent.what }}</p>
+        </div>
+        <div class="col-2">
+    {% highlight bash %}
+    $ toybox.py add modplayer
+    $ toybox.py update
+    {% endhighlight %}
+        </div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="group row">
+        <h2 id="toyboxpy-community">{{ t.pagecontent.doc.community }}</h2>
+        <div class="button">
+          <p><a href="https://github.com/DidierMalenfant/toybox.py/discussions">toybox.py/discussions</a></p>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      <div class="group row">
+        <h2 id="toyboxpy-blog">{{ t.pagecontent.doc.blog }}</h2>
+        <div class="button">
+          <p><a href="/blog/">toyboxpy.io/blog</a></p>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      <div class="group row">
+        <h2 id="toyboxpy-community">{{ t.pagecontent.doc.socials }}</h2>
+        <br>
+        <div class="button">
+          <p>{{ t.pagecontent.doc.sociallinks }}</p>
+        </div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="group row credits">
+        <p>{{ t.pagecontent.foot.code }} {{ t.pagecontent.foot.page }}<br>{{ t.pagecontent.foot.translation }}</p>
+      </div>
+    </li>
+  </ul>
+</div>
