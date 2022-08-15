@@ -1,6 +1,6 @@
 en:
   locale_name: English
-  subtitle: A dependency management system for Lua and C libraries on <a href="https://panic.com">Panic</a>’s <a href="https://play.date">Playdate</a> console.
+  subtitle: A Lua and C dependency management system for the <a href="https://play.date">Playdate</a> SDK.
   pagecontent:
     question: What does toybox.py do?
     what: <b>toybox.py</b> installs and handles dependencies between third party Lua and C libraries to make <b>Playdate</b> development easier.

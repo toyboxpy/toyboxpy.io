@@ -1,5 +1,5 @@
 title: toybox.py
-description: A dependency management system for the Playdate console.
+description: A Lua and C dependency management system for the Playdate SDK.
 
 repository: DidierMalenfant/toyboxpy.io
 
