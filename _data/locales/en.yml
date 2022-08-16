@@ -3,7 +3,7 @@ en:
   subtitle: A Lua and C dependency management system for the <a href="https://play.date">Playdate</a> SDK.
   pagecontent:
     question: What does toybox.py do?
-    what: <b>toybox.py</b> installs and handles dependencies between third party Lua and C libraries to make <b>Playdate</b> development easier.
+    what: <b>toybox.py</b> installs and handles dependencies between third party <b>Lua</b> and <b>C</b> libraries to make <b>Playdate</b> development easier.
     install:
       install: Install toybox.py
       paste: Paste that in a <b>macOS</b> Terminal shell prompt.
