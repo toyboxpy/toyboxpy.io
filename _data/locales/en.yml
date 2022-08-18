@@ -7,7 +7,7 @@ en:
     install:
       install: Install toybox.py
       paste: Paste that in a <b>macOS</b> Terminal shell prompt.
-      what: <b>toybox.py</b> is currently in <b>beta</b> and it's only been tested on <b>macOS</b> so far.
+      what: <b>toybox.py</b> is currently in <b>beta</b> and it's only been tested on <b>macOS</b> so far. You can <a href="https://github.com/DidierMalenfant/toybox.py/discussions/1"><b>help</b></a>.
     doc:
       blog: toybox.py blog
       community: Community discussion
