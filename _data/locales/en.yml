@@ -1,6 +1,6 @@
 en:
   locale_name: English
-  subtitle: A Lua and C dependency management system for the <a href="https://play.date">Playdate</a> SDK.
+  subtitle: A Lua and C dependency management system for the <a href="https://play.date" target="_blank">Playdate</a> SDK.
   pagecontent:
     question: What does toybox.py do?
     what: <b>toybox.py</b> installs and handles dependencies between third party <b>Lua</b> and <b>C</b> libraries to make <b>Playdate</b> development easier.
@@ -21,5 +21,5 @@ en:
       socials: toybox.py socials
       sociallinks: You can follow <b>toybox.py</b> on <a rel="me" href="https://mastodon.social/@toyboxpy">Mastodon</a> or <a href="https://twitter.com/toyboxpy">Twitter</a>.
     foot:
-      code: Made with ❤️ in Paris, France. toybox.py was created by <a href="https://github.com/DidierMalenfant">Didier Malenfant</a>. Inspired by <a href="https://github.com/jm/toybox">toybox</a> by <a href="https://github.com/jm">Jeremy McAnally</a>.
-      page: Website originally by <a href="https://exomel.com/">Rémi Prévost</a>, <a href="https://mikemcquaid.com">Mike McQuaid</a> and <a href="https://cargocollective.com/danilalo">Danielle Lalonde</a> for <a ref="https://brew.sh">brew.sh</a>. This will by customized eventually but my web skillz are 💩 right now 😔. Playdate is a registered trademark of <a href="https://panic.com">Panic</a>.
+      code: Made with ❤️ in Paris, France. toybox.py was created by <a href="https://github.com/DidierMalenfant">Didier Malenfant</a>. Inspired by <a href="https://github.com/jm/toybox" target="_blank">toybox</a> by <a href="https://github.com/jm" target="_blank">Jeremy McAnally</a>.
+      page: Website originally by <a href="https://exomel.com/" target="_blank">Rémi Prévost</a>, <a href="https://mikemcquaid.com" target="_blank">Mike McQuaid</a> and <a href="https://cargocollective.com/danilalo" target="_blank">Danielle Lalonde</a> for <a href="https://brew.sh" target="_blank">brew.sh</a>. This will by customized eventually but my web skillz are 💩 right now 😔. Playdate is a registered trademark of <a href="https://panic.com" target="_blank">Panic</a>.
