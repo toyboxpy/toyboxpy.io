@@ -1,7 +1,7 @@
 title: toybox.py
 description: A Lua and C dependency management system for the Playdate SDK.
 
-repository: DidierMalenfant/toyboxpy.io
+repository: toyboxpy/toyboxpy.io
 
 exclude:
   - bin
@@ -34,9 +34,9 @@ defaults:
 logo: /assets/img/toybox-449x449.png
 
 github:
-  repository_nwo: DidierMalenfant/toyboxpy.io
+  repository_nwo: toyboxpy/toyboxpy.io
 
-forkme_nwo: DidierMalenfant/toybox.py
+forkme_nwo: toyboxpy/toybox.py
 
 twitter:
   username: toyboxpy

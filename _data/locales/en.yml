@@ -4,13 +4,13 @@ en:
   pagecontent:
     question: What does toybox.py do?
     what: <b>toybox.py</b> installs and handles dependencies between third party <b>Lua</b> and <b>C</b> libraries to make <b>Playdate</b> development easier.
-    then: Then import the <a href="https://github.com/DidierMalenfant/toybox.py#using-lua-toyboxes">generated files</a> in your project.
+    then: Then import the <a href="https://github.com/toyboxpy/toybox.py#using-lua-toyboxes">generated files</a> in your project.
     install:
       install: Install toybox.py
       paste: Paste that in a <b>macOS</b> Terminal shell prompt.
-      what: <b>toybox.py</b> is currently in <b>beta</b> and it's only been tested on <b>macOS</b> so far. You can <a href="https://github.com/DidierMalenfant/toybox.py/discussions/1"><b>help</b></a>.
+      what: <b>toybox.py</b> is currently in <b>beta</b> and it's only been tested on <b>macOS</b> so far. You can <a href="https://github.com/toyboxpy/toybox.py/discussions/1"><b>help</b></a>.
     whatisthere: What can I play with?
-    herearesamples: Here are some <b>toyboxes</b> that you can play with right now. Best part is, you can also <a href="https://github.com/DidierMalenfant/toybox.py#creating-your-own-toyboxes">create your own</a>. If you do, make sure to let us know about them via <b>DM</b> on <b>social media</b> or use the hastag <b>#toyboxpy</b>.
+    herearesamples: Here are some <b>toyboxes</b> that you can play with right now. Best part is, you can also <a href="https://github.com/toyboxpy/toybox.py#creating-your-own-toyboxes">create your own</a>. If you do, make sure to let us know about them via <b>DM</b> on <b>social media</b> or use the hastag <b>#toyboxpy</b>.
     pdbasedesc: Contains some common low-level C helpers and handy extensions to Lua <b>table</b>, <b>math</b> and also a C-like <b>enum</b> for Lua.
     playbox2ddesc: A port of <a href="https://box2d.org" target="_blank">box2d</a> lite for the <b>Playdate</b>.
     tileddesc: A level importer and manager for <a href="https://mapeditor.org" target="_blank">Tiled</a> level files.<br><br><br>
