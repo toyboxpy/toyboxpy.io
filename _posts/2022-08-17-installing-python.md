@@ -57,7 +57,7 @@ Now install and set as local version the latest stable version of **Python** fro
 
 ```console
 pyenv install -v 3.10.6
-pyenv local 3.10.6
+pyenv global 3.10.6
 ```
 
 Finally upgrade the **Python** package manager **pip**:
