@@ -3,7 +3,7 @@ title: Installing a newer Python
 author: DidierMalenfant
 redirect_from: /blog/installing-python
 ---
-Different platforms may come with different built versions of [**Python**](https://python.org). On **macOS**, **Apple** has even officially deprecated **Python 2.7** as of **Monterey 12.3** and **Python 3** does not come pre-installed at all. Apps like **toybox.py** requires a specific version of **Python** so it's a good idea to control the version of **Python** available on you machine yourself.
+Different platforms may come with different built versions of [**Python**](https://python.org). On **macOS**, **Apple** has even officially deprecated **Python 2.7** as of **Monterey 12.3** and **Python 3** does not come pre-installed at all. Apps like **toybox.py** requires a specific version of **Python** so it's a good idea to control the version of **Python** available on your machine.
 
 #### Installing Python on macOS
 
@@ -66,4 +66,26 @@ Finally upgrade the **Python** package manager **pip**:
 python -m pip install --upgrade pip
 ```
 
-And you are ready to go!
+#### Installing Python on Linux
+
+[**Homebrew**](https://brew.sh) is available on **Linux** so the same instructions as **macOS** should work too.
+
+#### Installing Python on Windows
+
+First, follow the installation instructions for [**Chocolatey**](https://chocolatey.org/install). It’s a community system packager manager for **Windows** 7+. It’s very much like **Homebrew** on macOS.
+
+Once done, installing **Python** 3 is very simple, because **Chocolatey** pushes **Python** 3 as the default.
+
+```console
+choco install python
+```
+
+Once you’ve run this command, you should be able to launch **Python** directly from to the console. **Chocolatey** is fantastic and automatically adds **Python** to your path.
+
+Finally upgrade the **Python** package manager **pip**:
+
+```console
+python -m pip install -U pip
+```
+
+(Taken from [HGTP](https://docs.python-guide.org/starting/install3/win/)).
