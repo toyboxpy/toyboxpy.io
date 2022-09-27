@@ -11,7 +11,7 @@ en:
       what: <b>toybox.py</b> is currently in <b>beta</b> and it's only been tested on <b>macOS</b>. You can <a href="https://github.com/toyboxpy/toybox.py/discussions/1"><b>help</b></a> with <b>Linux</b> and <b>Windows</b>.
     whatisthere: What can I play with?
     herearesamples: Here are some <b>toyboxes</b> that you can play with right now. Best part is, you can also <a href="https://github.com/toyboxpy/toybox.py#creating-your-own-toyboxes">create your own</a>.
-    pdbasedesc: Contains some common low-level C helpers and handy extensions to Lua <b>table</b>, <b>math</b> and also a C-like <b>enum</b> for Lua.
+    pdbasedesc: Common low-level C helpers and handy extensions to Lua <b>table</b>, <b>math</b> and also a C-like <b>enum</b> for Lua.
     playbox2ddesc: A port of <a href="https://box2d.org" target="_blank">box2d</a> lite for the <b>Playdate</b>.
     tileddesc: A level importer and manager for <a href="https://mapeditor.org" target="_blank">Tiled</a> level files.<br><br>
     modplayerdesc: An <b>Amiga</b> SoundTracker/ProTracker module player.
