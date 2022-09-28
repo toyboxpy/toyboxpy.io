@@ -178,6 +178,6 @@ Close the **Powershell** window and open a new one for the changes to take effec
 And finally make sure you're running the latest version of **Python**'s package manager **pip**:
 
 <div class="copyable-windows">{%- highlight bash -%}
-    python -m pip install --upgrade pip
+python -m pip install --upgrade pip
 {%- endhighlight -%}</div><p></p>
 
