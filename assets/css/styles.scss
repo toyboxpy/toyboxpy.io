@@ -223,6 +223,13 @@ div .highlight {
   margin-top: 0;
 }
 
+.postcontent
+{
+  .highlight {
+    width: 100%;
+  }
+}
+
 .copyable {
   display: flex;
   justify-content: center;

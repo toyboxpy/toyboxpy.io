@@ -1,50 +1,49 @@
 ---
-title: Installing a newer Python
+title: Installing a better Python
 author: DidierMalenfant
 redirect_from: /blog/installing-python
 ---
-Different platforms may come with different built versions of [**Python**](https://python.org). On **macOS**, **Apple** has even officially deprecated **Python 2.7** as of **Monterey 12.3** and **Python 3** does not come pre-installed at all. Apps like **toybox.py** requires a specific version of **Python** so it's a good idea to control the version of **Python** available on your machine.
+**toybox.py** requires at least [**Python**](https://python.org) 3.7 and you need access to [**pip**](https://pypi.org/project/pip/), the Python package manager. Here's how to easily set this up:
 
-#### Installing Python on macOS
+- [Installing Python on macOS](#installing-python-on-macos)
+- [Installing Python on Linux](#installing-python-on-linux)
+- [Installing Python on Windows](#installing-python-on-windows)
 
+<br>
+
+### Installing Python on macOS
+<p></p>
 Open a terminal window. All the commands listed here will be typed directly there.
 
 If you haven't already done so, start by installing [**Homebrew**](https://brew.sh) which will let us easily install the packages we need:
 
-```console
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
+<div class="copyable"> {%- highlight bash -%}
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+{%- endhighlight -%} </div><p></p>
 
 Then we need to install [**pyenv**](https://github.com/pyenv/pyenv) which will let us manage different version of **Python**:
 
-```console
-brew install pyenv
-```
+<div class="copyable">{%- highlight bash -%}
+    brew install pyenv
+{%- endhighlight -%}</div><p></p>
 
 In order to load **pyenv** automatically when opening a terminal window, you need to add the following line to your shell startup file (typically `~/.bashrc` or `~/.zshrc` depending on which shell is the default on your machine):
 
-```console
+```bash
+# -- pyenv Setup
 eval "$(pyenv init -)"
 ```
 
-Then restart your shell by closing and reopening your terminal window. You should now be able to list which versions of **Python** are available by typing:
+Close this terminal window then re-open another one for the changes to take effect. You should now be able to list which versions of **Python** are available by typing:
 
-```console
-pyenv install --list | grep " 3\."   
-```
+<div class="copyable">{%- highlight bash -%}
+    pyenv install --list | grep " 3\."
+{%- endhighlight -%}</div><p></p>
 
 This will give you a list such as:
 
 ```console
-3.9.6
-3.9.7
-3.9.8
-3.9.9
-3.9.10
-3.9.11
-3.9.12
-3.9.13
-3.10.0
+...
 3.10.1
 3.10.2
 3.10.3
@@ -53,24 +52,104 @@ This will give you a list such as:
 3.10.6
 ```
 
-Now install and set as local version the latest stable version of **Python** from the list (your version may vary from this one if newer versions have been released):
+Now install and set as global version the latest stable version of **Python** from the list (your version may vary from this one if newer versions have been released):
+
+<div class="copyable">{%- highlight bash -%}
+    pyenv install -v 3.10.6
+{%- endhighlight -%}</div><p></p>
+<div class="copyable">{%- highlight bash -%}
+    pyenv global 3.10.6
+{%- endhighlight -%}</div><p></p>
+
+And finally make sure you're running the latest version of **Python** package manager **pip**:
+
+<div class="copyable">{%- highlight bash -%}
+    python -m pip install --upgrade pip
+{%- endhighlight -%}</div><p></p>
+
+<br>
+
+### Installing Python on Linux
+<p></p>
+
+These instructions apply to **Ubuntu Linux** 18.04 and 20.04. You may need to tweak them for other distributions.
+
+Open a terminal window. All the commands listed here will be typed directly there.
+
+If you haven't already done so, start by installing [**Homebrew**](https://brew.sh) which will let us easily install the packages we need:
+
+<div class="copyable"> {%- highlight bash -%}
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+{%- endhighlight -%} </div><p></p>
+
+During installation, you'll need to select the option to install **Homebrew** in `/home/linuxbrew/.linuxbrew` which is the recommended location.
+
+You then need to install some essential packages for building dependencies.
+
+<div class="copyable"> {%- highlight bash -%}
+    sudo apt-get install build-essential zlib1g-dev
+{%- endhighlight -%} </div><p></p>
+
+In order to setup **Homebrew** automatically when opening a terminal window, you need to add the following line to your shell startup file (for example `.profile`):
+
+```bash
+# set PATH, MANPATH, etc., for Homebrew.
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+```
+
+Close this terminal window then re-open another one for the changes to take effect. You should now be able to install **pyenv**.
+
+<div class="copyable"> {%- highlight bash -%}
+    brew install pyenv
+{%- endhighlight -%} </div><p></p>
+
+In order to load **pyenv** automatically when opening a terminal window, you need to add the following line to your shell startup file (for example `.profile`)
+
+```bash
+# Init pyenv.
+eval "$(pyenv init -)"
+```
+
+Once again close this terminal window then re-open another one for the changes to take effect. You should now be able to list which versions of **Python** are available by typing:
+
+<div class="copyable">{%- highlight bash -%}
+    pyenv install --list | grep " 3\."
+{%- endhighlight -%}</div><p></p>
+
+This will give you a list such as:
 
 ```console
-pyenv install -v 3.10.6
+...
+3.10.1
+3.10.2
+3.10.3
+3.10.4
+3.10.5
+3.10.6
+```
+
+Now install and set as global the latest stable version of **Python** from the list (your version may vary from this one if newer versions have been released):
+
+<div class="copyable"> {%- highlight bash -%}
+    pyenv install -v 3.10.6
+{%- endhighlight -%} </div><p></p>
+
+<div class="copyable"> {%- highlight bash -%}
 pyenv global 3.10.6
-```
+{%- endhighlight -%} </div><p></p>
 
-Finally upgrade the **Python** package manager **pip**:
+**Note:** Depending on your distribution, you can get some errors during installation. If so, you can check out <a href="https://code.luasoftware.com/tutorials/linux/ubuntu-pyenv-build-python-37-common-error/">this article</a> on common errors with **Ubuntu**.
 
-```console
-python -m pip install --upgrade pip
-```
+And finally make sure you're running the latest version of **Python** package manager **pip**:
 
-#### Installing Python on Linux
+<div class="copyable">{%- highlight bash -%}
+    python -m pip install --upgrade pip
+{%- endhighlight -%}</div><p></p>
 
-[**Homebrew**](https://brew.sh) is available on **Linux** so the same instructions as **macOS** should work too.
+<br>
 
-#### Installing Python on Windows
+### Installing Python on Windows
+<p></p>
 
 First, follow the installation instructions for [**Chocolatey**](https://chocolatey.org/install). It’s a community system packager manager for **Windows** 7+. It’s very much like **Homebrew** on macOS.
 
