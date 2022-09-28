@@ -151,20 +151,33 @@ And finally make sure you're running the latest version of **Python** package ma
 ### Installing Python on Windows
 <p></p>
 
-First, follow the installation instructions for [**Chocolatey**](https://chocolatey.org/install). It’s a community system packager manager for **Windows** 7+. It’s very much like **Homebrew** on macOS.
+The instructions below apply to **Windows** 7+ and some were originally found at [HGTP](https://docs.python-guide.org/starting/install3/win/).
 
-Once done, installing **Python** 3 is very simple, because **Chocolatey** pushes **Python** 3 as the default.
+First, make sure that you have [Git](https://git-scm.com/download/win) installed on your machine. Unless you know you need one, make sure you do **NOT** choose to use a credential helper during **Git**'s install.
 
-```console
+Then you'll need to install **Chocolatey** which is very much like **Homebrew** on **macOS** and **Linux**.
+
+You'll need an administrative **Powershell**. Click on the Windows/Start Menu and go to `Windows Powershell` section. Right click on `Windows Powershell` and select `More->Run as administrator` in the contextual menu.
+
+Then type the following to install **Chocolatey**:
+
+<div class="copyable-windows">{%- highlight bash -%}
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+{%- endhighlight -%}</div><p></p>
+
+You can now close the **Powershell** administrative window and open a regular one.
+
+Then install Python (**Chocolatey** installs **Python** 3 as the default):
+
+<div class="copyable-windows">{%- highlight bash -%}
 choco install python
-```
+{%- endhighlight -%}</div><p></p>
 
-Once you’ve run this command, you should be able to launch **Python** directly from to the console. **Chocolatey** is fantastic and automatically adds **Python** to your path.
+Close the **Powershell** window and open a new one for the changes to take effect.
 
-Finally upgrade the **Python** package manager **pip**:
+And finally make sure you're running the latest version of **Python**'s package manager **pip**:
 
-```console
-python -m pip install -U pip
-```
+<div class="copyable-windows">{%- highlight bash -%}
+    python -m pip install --upgrade pip
+{%- endhighlight -%}</div><p></p>
 
-(Taken from [HGTP](https://docs.python-guide.org/starting/install3/win/)).

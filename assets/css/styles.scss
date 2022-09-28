@@ -268,6 +268,37 @@ div .highlight {
   }
 }
 
+.copyable-windows {
+  display: flex;
+  justify-content: center;
+  .highlight {
+    overflow-x: auto;
+    margin: 0;
+    pre {
+      @include border-side-radius("right", 0);
+      margin: 0;
+    }
+
+    code::before {
+      @extend .nv;
+      display: inline;
+      content: '> ';
+    }
+  }
+
+  button {
+    background: $black_30;
+    margin: 0;
+    border: none;
+    border-left: 1px solid $color_dallas_approx;
+    @include border-side-radius("right", 0.4em);
+  }
+
+  button:hover {
+    background: $color_dallas_approx;
+  }
+}
+
 .install {
   display: flex;
   align-items: center;

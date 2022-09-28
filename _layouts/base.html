@@ -70,7 +70,10 @@
     <script>
       function setupCopyables() {
         if (navigator.clipboard) {
-          for (const element of document.getElementsByClassName("copyable")) {
+          const classA = Array.from(document.getElementsByClassName("copyable"))
+               ,classB = Array.from(document.getElementsByClassName("copyable-windows"))
+               ,results = Array.from(new Set(classA.concat(classB)))
+          for (const element of results) {
             let text = element.innerText.trim();
             if(text.startsWith("$")) {
               text = text.substr(1).trimLeft();
