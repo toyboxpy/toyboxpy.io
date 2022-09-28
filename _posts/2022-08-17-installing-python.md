@@ -3,7 +3,7 @@ title: Installing a better Python
 author: DidierMalenfant
 redirect_from: /blog/installing-python
 ---
-**toybox.py** requires at least [**Python**](https://python.org) 3.7 and you need access to [**pip**](https://pypi.org/project/pip/), the Python package manager. Here's how to easily set this up:
+**toybox.py** requires at least [**Python**](https://python.org) 3.7 and you need access to [**pip**](https://pypi.org/project/pip/), the **Python** package manager. Here's how to easily set this up:
 
 - [Installing Python on macOS](#installing-python-on-macos)
 - [Installing Python on Linux](#installing-python-on-linux)
@@ -61,7 +61,7 @@ Now install and set as global version the latest stable version of **Python** fr
     pyenv global 3.10.6
 {%- endhighlight -%}</div><p></p>
 
-And finally make sure you're running the latest version of **Python** package manager **pip**:
+And finally make sure you're running the latest version of **Python**'s package manager **pip**:
 
 <div class="copyable">{%- highlight bash -%}
     python -m pip install --upgrade pip
@@ -72,7 +72,7 @@ And finally make sure you're running the latest version of **Python** package ma
 ### Installing Python on Linux
 <p></p>
 
-These instructions apply to **Ubuntu Linux** 18.04 and 20.04. You may need to tweak them for other distributions.
+The instructions below apply to **Ubuntu Linux** 18.04 and 20.04. You may need to tweak them for other distributions.
 
 Open a terminal window. All the commands listed here will be typed directly there.
 
@@ -140,7 +140,7 @@ pyenv global 3.10.6
 
 **Note:** Depending on your distribution, you can get some errors during installation. If so, you can check out <a href="https://code.luasoftware.com/tutorials/linux/ubuntu-pyenv-build-python-37-common-error/">this article</a> on common errors with **Ubuntu**.
 
-And finally make sure you're running the latest version of **Python** package manager **pip**:
+And finally make sure you're running the latest version of **Python**'s package manager **pip**:
 
 <div class="copyable">{%- highlight bash -%}
     python -m pip install --upgrade pip
