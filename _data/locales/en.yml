@@ -8,7 +8,7 @@ en:
     install:
       install: Install toybox.py
       paste: Make sure you have a <a href="https://toyboxpy.io/blog/installing-python">supported version</a> of Python then paste this in a **macOS** Terminal, a **Linux** shell prompt or a **Windows** Powershell.
-      what: <b>toybox.py</b> is currently in <b>beta</b> and it's only been tested on <b>macOS</b> and <b>Linux</b>. You can <a href="https://github.com/toyboxpy/toybox.py/discussions/1"><b>help</b></a> with <b>Windows</b>.
+      what: <b>toybox.py</b> is currently in <b>beta</b>.
     whatisthere: What can I play with?
     herearesamples: Here are some <b>toyboxes</b> that you can play with right now. Best part is, you can also <a href="https://github.com/toyboxpy/toybox.py#creating-your-own-toyboxes">create your own</a>.
     pdbasedesc: Common low-level C helpers and handy extensions to Lua <b>table</b>, <b>math</b> and also a C-like <b>enum</b> for Lua.
