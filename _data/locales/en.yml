@@ -3,7 +3,7 @@ en:
   subtitle: A Lua, C and asset dependency manager for the <a href="https://play.date" target="_blank">Playdate</a> SDK.
   pagecontent:
     question: What does toybox.py do?
-    what: <b>toybox.py</b> installs and handles dependencies between third party <b>Lua</b>, <b>C</b> and <b>asset</b> libraries to make <b>Playdate</b> development easier.
+    what: <b>toybox.py</b> installs and handles dependencies between third party <b>Lua</b>, <b>C</b> and <b>asset</b> libraries to make <b>Playdate</b> development easier. Read the <a href="https://github.com/toyboxpy/toybox.py#toyboxpy">manual</a> for more info.
     then: Then simply <a href="https://github.com/toyboxpy/toybox.py#using-lua-toyboxes">import</a> the <b>toyboxes</b> in your project.
     install:
       install: Install toybox.py
