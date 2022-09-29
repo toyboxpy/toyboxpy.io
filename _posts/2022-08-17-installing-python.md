@@ -1,183 +1,141 @@
 ---
-title: Installing a better Python
+title: Installing Python
 author: DidierMalenfant
 redirect_from: /blog/installing-python
 ---
-**toybox.py** requires at least [**Python**](https://python.org) 3.7 and you need access to [**pip**](https://pypi.org/project/pip/), the **Python** package manager. Here's how to easily set this up:
-
-- [Installing Python on macOS](#installing-python-on-macos)
-- [Installing Python on Linux](#installing-python-on-linux)
-- [Installing Python on Windows](#installing-python-on-windows)
-
-<br>
-
-### Installing Python on macOS
-<p></p>
-Open a terminal window. All the commands listed here will be typed directly there.
-
-If you haven't already done so, start by installing [**Homebrew**](https://brew.sh) which will let us easily install the packages we need:
+**toybox.py** requires at least [**Python**](https://python.org) 3.7 and you need access to [**pip**](https://pypi.org/project/pip/), the **Python** package manager. You can check which version you currently have, if any, with:
 
 <div class="copyable"> {%- highlight bash -%}
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+python --version
 {%- endhighlight -%} </div><p></p>
 
-Then we need to install [**pyenv**](https://github.com/pyenv/pyenv) which will let us manage different version of **Python**:
+On **macOS** or **Linux** is this returns a 2.x version, try this instead:
 
-<div class="copyable">{%- highlight bash -%}
-    brew install pyenv
-{%- endhighlight -%}</div><p></p>
+<div class="copyable"> {%- highlight bash -%}
+python3 --version
+{%- endhighlight -%} </div><p></p>
 
-In order to load **pyenv** automatically when opening a terminal window, you need to add the following line to your shell startup file (typically `~/.bashrc` or `~/.zshrc` depending on which shell is the default on your machine):
+To check if you have **pip** installed you can do this:
 
-```bash
-# -- pyenv Setup
-eval "$(pyenv init -)"
-```
+<div class="copyable"> {%- highlight bash -%}
+pip --version
+{%- endhighlight -%} </div><p></p>
 
-Close this terminal window then re-open another one for the changes to take effect. You should now be able to list which versions of **Python** are available by typing:
+Here's how you can install a newer/supported version of **Python** and **pip**:
 
-<div class="copyable">{%- highlight bash -%}
-    pyenv install --list | grep " 3\."
-{%- endhighlight -%}</div><p></p>
-
-This will give you a list such as:
-
-```console
-...
-3.10.1
-3.10.2
-3.10.3
-3.10.4
-3.10.5
-3.10.6
-```
-
-Now install and set as global version the latest stable version of **Python** from the list (your version may vary from this one if newer versions have been released):
-
-<div class="copyable">{%- highlight bash -%}
-    pyenv install -v 3.10.6
-{%- endhighlight -%}</div><p></p>
-<div class="copyable">{%- highlight bash -%}
-    pyenv global 3.10.6
-{%- endhighlight -%}</div><p></p>
-
-And finally make sure you're running the latest version of **Python**'s package manager **pip**:
-
-<div class="copyable">{%- highlight bash -%}
-    python -m pip install --upgrade pip
-{%- endhighlight -%}</div><p></p>
+- [Installing on macOS](#installing-python-on-macos)
+- [Installing on Linux](#installing-python-on-linux)
+- [Installing on Windows](#installing-python-on-windows)
 
 <br>
 
-### Installing Python on Linux
+### Installing on macOS
 <p></p>
-
-The instructions below apply to **Ubuntu Linux** 18.04 and 20.04. You may need to tweak them for other distributions.
 
 Open a terminal window. All the commands listed here will be typed directly there.
 
-If you haven't already done so, start by installing [**Homebrew**](https://brew.sh) which will let us easily install the packages we need:
-
-<div class="copyable"> {%- highlight bash -%}
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-{%- endhighlight -%} </div><p></p>
-
-During installation, you'll need to select the option to install **Homebrew** in `/home/linuxbrew/.linuxbrew` which is the recommended location.
-
-You then need to install some essential packages for building dependencies.
-
-<div class="copyable"> {%- highlight bash -%}
-    sudo apt-get install build-essential zlib1g-dev
-{%- endhighlight -%} </div><p></p>
-
-In order to setup **Homebrew** automatically when opening a terminal window, you need to add the following line to your shell startup file (for example `.profile`):
-
-```bash
-# set PATH, MANPATH, etc., for Homebrew.
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-```
-
-Close this terminal window then re-open another one for the changes to take effect. You should now be able to install **pyenv**.
-
-<div class="copyable"> {%- highlight bash -%}
-    brew install pyenv
-{%- endhighlight -%} </div><p></p>
-
-In order to load **pyenv** automatically when opening a terminal window, you need to add the following line to your shell startup file (for example `.profile`)
-
-```bash
-# Init pyenv.
-eval "$(pyenv init -)"
-```
-
-Once again close this terminal window then re-open another one for the changes to take effect. You should now be able to list which versions of **Python** are available by typing:
+First, make sure that you have the developer tools installed on your machine.
 
 <div class="copyable">{%- highlight bash -%}
-    pyenv install --list | grep " 3\."
+git --version
 {%- endhighlight -%}</div><p></p>
 
-This will give you a list such as:
+If running this command offers to you install the developer tools, say yes.
 
-```console
-...
-3.10.1
-3.10.2
-3.10.3
-3.10.4
-3.10.5
-3.10.6
-```
-
-Now install and set as global the latest stable version of **Python** from the list (your version may vary from this one if newer versions have been released):
-
-<div class="copyable"> {%- highlight bash -%}
-    pyenv install -v 3.10.6
-{%- endhighlight -%} </div><p></p>
-
-<div class="copyable"> {%- highlight bash -%}
-pyenv global 3.10.6
-{%- endhighlight -%} </div><p></p>
-
-**Note:** Depending on your distribution, you can get some errors during installation. If so, you can check out <a href="https://code.luasoftware.com/tutorials/linux/ubuntu-pyenv-build-python-37-common-error/">this article</a> on common errors with **Ubuntu**.
-
-And finally make sure you're running the latest version of **Python**'s package manager **pip**:
+If the command returns the current version for **git**, make sure you also have **Python** installed:
 
 <div class="copyable">{%- highlight bash -%}
-    python -m pip install --upgrade pip
+python3 --version
 {%- endhighlight -%}</div><p></p>
+
+This should also report the current version of **Python** which should be higher or equal to `3.7`.
+
+Finally make sure you're running the latest version of **Python**'s package manager **pip**:
+
+<div class="copyable">{%- highlight bash -%}
+python -m pip install --upgrade pip
+{%- endhighlight -%}</div><p></p>
+
+If you get a message like this one:
+
+```
+WARNING: The scripts pip, pip3 and pip3.9 are installed in '/Users/admin/Library/Python/3.9/bin' which is not on PATH.
+```
+
+Then do the following, keeping in mind you may need to replace the version number for **Python** with the one given in your warning message.
+
+If the top of your terminal window has `bash` in it (older **macOS** versions before **Catalina**), do:
+
+<div class="copyable">{%- highlight bash -%}
+echo "# Add Python to path" >> .bashrc
+{%- endhighlight -%}</div><p></p>
+<div class="copyable">{%- highlight bash -%}
+echo 'export PATH=$PATH:/Users/admin/Library/Python/3.9/bin' >> .bashrc
+{%- endhighlight -%}</div><p></p>
+
+and if the top of your terminal Window has `zsh` in it (**macOS Catalina** and later), do:
+
+<div class="copyable">{%- highlight bash -%}
+echo "# Add Python to path" >> .zshrc
+{%- endhighlight -%}</div><p></p>
+<div class="copyable">{%- highlight bash -%}
+echo 'export PATH=$PATH:/Users/admin/Library/Python/3.9/bin' >> .zshrc
+{%- endhighlight -%}</div><p></p>
+
+Then close the terminal window and re-open it for the changed to take effect.
 
 <br>
 
-### Installing Python on Windows
+### Installing on Linux
 <p></p>
 
-The instructions below apply to **Windows** 7+ and some were originally found at [HGTP](https://docs.python-guide.org/starting/install3/win/).
+Since on **Linux** many services rely on the installed version of **Python**, you have to be careful when trying to upgrade to a newer version and do it in a way that doesn't affect any other versions.
 
-First, make sure that you have [Git](https://git-scm.com/download/win) installed on your machine. Unless you know you need one, make sure you do **NOT** choose to use a credential helper during **Git**'s install.
+The instructions below apply to **Ubuntu Linux** 18.04 and 20.04. You may need to tweak them for other distributions. You can find a detailed guide on installing Python 3 and pip over at [RealPython](https://realpython.com/installing-python/).
 
-Then you'll need to install **Chocolatey** which is very much like **Homebrew** on **macOS** and **Linux**.
+Open a terminal window. All the commands listed here will be typed directly there.
 
-You'll need an administrative **Powershell**. Click on the Windows/Start Menu and go to `Windows Powershell` section. Right click on `Windows Powershell` and select `More->Run as administrator` in the contextual menu.
+First make sure your list of packages is up to date:
 
-Then type the following to install **Chocolatey**:
-
-<div class="copyable-windows">{%- highlight bash -%}
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+<div class="copyable">{%- highlight bash -%}
+sudo apt-get update
 {%- endhighlight -%}</div><p></p>
 
-You can now close the **Powershell** administrative window and open a regular one.
+Install **Python** 3.8 (If you're running **Ubuntu Linux** 20.04 you already have it and you can skip this step):
 
-Then install Python (**Chocolatey** installs **Python** 3 as the default):
-
-<div class="copyable-windows">{%- highlight bash -%}
-choco install python
+<div class="copyable">{%- highlight bash -%}
+sudo apt-get install python3.8
 {%- endhighlight -%}</div><p></p>
 
-Close the **Powershell** window and open a new one for the changes to take effect.
+Then install the **Python** package manager `pip`:
+
+<div class="copyable">{%- highlight bash -%}
+sudo apt-get install python3-pip
+{%- endhighlight -%}</div><p></p>
 
 And finally make sure you're running the latest version of **Python**'s package manager **pip**:
+
+<div class="copyable">{%- highlight bash -%}
+python3.8 -m pip install --upgrade pip
+{%- endhighlight -%}</div><p></p>
+
+If you get a warning about the scripts pip, pip3 and pip3.8 not being in your PATH you can safely ignore it.
+
+Close the terminal and reopen it for the changes to take effect.
+
+<br>
+
+### Installing on Windows
+<p></p>
+
+First, make sure that you have [**Git**](https://git-scm.com/download/win) installed on your machine. When asked about a credential helper during installation, make sure you do **NOT** choose to use one unless you already use one for your projects.
+
+You can then install the latest release of [**Python**](https://www.python.org/downloads/windows/). Note that with **Windows** 7 you may not be able to install any version beyond **Python** 3.7.
+
+Make sure to check `Add Python <version> to path.` at the beginning and `Disable Path lenght limit` at the end of the installation.
+
+Finally open a **Windows Terminal** or **Powershell** and make sure you're running the latest version of **Python**'s package manager **pip**:
 
 <div class="copyable-windows">{%- highlight bash -%}
 python -m pip install --upgrade pip
 {%- endhighlight -%}</div><p></p>
-
