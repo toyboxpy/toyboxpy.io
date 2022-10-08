@@ -22,17 +22,11 @@ layout: base
       <div class="group row">
         <h2 id="install">{{ t.pagecontent.install.install }}</h2>
         <br>
-        <div class="col-1">
-          <p>{{ t.pagecontent.install.paste }}</p>
+        <div class="copyable">
+          {%- highlight bash -%} pip install toyboxpy {%- endhighlight -%}
         </div>
-        <div class="col-2">
-          <div class="copyable">
-            {%- highlight bash -%} pip install toyboxpy {%- endhighlight -%}
-          </div>
-        </div>
-        <div class="button">
-          <p>{{ t.pagecontent.install.what }}</p>
-        </div>
+        <br>
+        <p>{{ t.pagecontent.install.paste }}</p>
       </div>
     </li>
 
