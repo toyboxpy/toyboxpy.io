@@ -13,7 +13,7 @@ en:
     herearesamples: Here are some <b>toyboxes</b> that you can play with right now. Best part is, you can also <a href="https://github.com/toyboxpy/toybox.py#creating-your-own-toyboxes">create your own</a>.
     pdbasedesc: Common low-level C helpers and handy extensions to Lua <b>table</b>, <b>math</b> and also a C-like <b>enum</b> for Lua.
     playbox2ddesc: A port of <a href="https://box2d.org" target="_blank">box2d</a> lite for the <b>Playdate</b>.
-    tileddesc: A level importer and manager for <a href="https://mapeditor.org" target="_blank">Tiled</a> level files.<br><br>
+    tileddesc: A level importer and renderer for <a href="https://mapeditor.org" target="_blank">Tiled</a> level files.<br><br>
     fontsampledesc: An example of an asset-only toybox to easily add a font to any project.
     animatedspriteedesc: Sprite class extension with imagetable animation and finite state machine support.
     ldtkdesc: Load tilemaps created with <a href="https://ldtk.io" target="_blank">LDtk</a> in playdate games.
