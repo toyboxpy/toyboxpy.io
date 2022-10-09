@@ -128,11 +128,9 @@ Close the terminal and reopen it for the changes to take effect.
 ### Installing on Windows
 <p></p>
 
-First, make sure that you have [**Git**](https://git-scm.com/download/win) installed on your machine. When asked about a credential helper during installation, make sure you do **NOT** choose to use one unless you already use one for your projects.
+First, make sure that you have [**Git**](https://git-scm.com/download/win) installed on your machine. Then install the latest release of [**Python 3**](https://www.python.org/downloads/windows/). Note that with **Windows** 7 you may not be able to install any version beyond **Python** 3.7.
 
-You can then install the latest release of [**Python**](https://www.python.org/downloads/windows/). Note that with **Windows** 7 you may not be able to install any version beyond **Python** 3.7.
-
-Make sure to check `Add Python <version> to path.` at the beginning and `Disable Path lenght limit` at the end of the installation.
+**Make sure to check** `Add Python <version> to path` at the beginning and `Disable Path length limit` at the end of the installation.
 
 Finally open a **Windows Terminal** or **Powershell** and make sure you're running the latest version of **Python**'s package manager **pip**:
 
