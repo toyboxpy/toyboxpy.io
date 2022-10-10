@@ -3,7 +3,7 @@ title: Installing Python
 author: DidierMalenfant
 redirect_from: /blog/installing-python
 ---
-**toybox.py** requires at least [**Python**](https://python.org) 3.7 and you need access to [**pip**](https://pypi.org/project/pip/), the **Python** package manager. You can check which version you currently have, if any, with:
+**toybox.py** requires at least [**Python**](https://python.org){:target="_blank"} 3.7 and you need access to [**pip**](https://pypi.org/project/pip/){:target="_blank"}, the **Python** package manager. You can check which version you currently have, if any, with:
 
 <div class="copyable"> {%- highlight bash -%}
 python --version
@@ -91,7 +91,7 @@ Then close the terminal window and re-open it for the changed to take effect.
 
 Since on **Linux** many services rely on the installed version of **Python**, you have to be careful when trying to upgrade to a newer version and do it in a way that doesn't affect any other versions.
 
-The instructions below apply to **Ubuntu Linux** 18.04 and 20.04. You may need to tweak them for other distributions. You can find a detailed guide on installing Python 3 and pip over at [RealPython](https://realpython.com/installing-python/).
+The instructions below apply to **Ubuntu Linux** 18.04 and 20.04. You may need to tweak them for other distributions. You can find a detailed guide on installing Python 3 and pip over at [RealPython](https://realpython.com/installing-python/){:target="_blank"}.
 
 Open a terminal window. All the commands listed here will be typed directly there.
 
@@ -128,7 +128,7 @@ Close the terminal and reopen it for the changes to take effect.
 ### Installing on Windows
 <p></p>
 
-First, make sure that you have [**Git**](https://git-scm.com/download/win) installed on your machine. Then install the latest release of [**Python 3**](https://www.python.org/downloads/windows/). Note that with **Windows** 7 you may not be able to install any version beyond **Python** 3.7.
+First, make sure that you have [**Git**](https://git-scm.com/download/win){:target="_blank"} installed on your machine. Then install the latest release of [**Python 3**](https://www.python.org/downloads/windows/){:target="_blank"}. Note that with **Windows** 7 you may not be able to install any version beyond **Python** 3.7.
 
 **Make sure to check** `Add Python <version> to path` at the beginning and `Disable Path length limit` at the end of the installation.
 
