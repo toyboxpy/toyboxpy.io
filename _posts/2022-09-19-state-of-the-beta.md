@@ -18,3 +18,5 @@ Look in the [Readme](https://github.com/toyboxpy/toybox.py#readme) file for more
 Finally I will, in the coming days, reach out to developers of cool third party libraries and engines for the **playdate** in order to have them try **toyboxpy**. I've started [a list of **toyboxes**](https://github.com/stars/DidierMalenfant/lists/toyboxes) on Github and I will update it as new projects come alive.
 
 Happy **toyboxing**!
+
+With ❤️ from Paris, France.
