@@ -23,9 +23,9 @@ pip --version
 
 Here's how you can install a newer/supported version of **Python** and **pip**:
 
-- [Installing on macOS](#installing-python-on-macos)
-- [Installing on Linux](#installing-python-on-linux)
-- [Installing on Windows](#installing-python-on-windows)
+- [Installing on macOS](#installing-on-macos)
+- [Installing on Linux](#installing-on-linux)
+- [Installing on Windows](#installing-on-windows)
 
 <br>
 
