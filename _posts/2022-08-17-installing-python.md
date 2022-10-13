@@ -91,7 +91,7 @@ Then close the terminal window and re-open it for the changed to take effect.
 
 Since on **Linux** many services rely on the installed version of **Python**, you have to be careful when trying to upgrade to a newer version and do it in a way that doesn't affect any other versions.
 
-The instructions below apply to **Ubuntu Linux** 18.04 and 20.04. You may need to tweak them for other distributions. You can find a detailed guide on installing Python 3 and pip over at [RealPython](https://realpython.com/installing-python/){:target="_blank"}.
+The instructions below apply to **Ubuntu Linux** 18.04 and 20.04. You may need to tweak them for other distributions. You can find a detailed guide on installing **Python 3** and pip over at [RealPython](https://realpython.com/installing-python/){:target="_blank"}.
 
 Open a terminal window. All the commands listed here will be typed directly there.
 
