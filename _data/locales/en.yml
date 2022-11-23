@@ -20,7 +20,5 @@ en:
     doc:
       blog: Official blog
       community: Community discussion
-      socials: Social networks
-      sociallinks: You can follow <b>toybox.py</b> on <a rel="me" href="https://mastodon.social/@toyboxpy">Mastodon</a> or <a href="https://twitter.com/toyboxpy">Twitter</a>.
     foot:
-      code: Made with ❤️ in <b>Orlando, FL</b> and <b><a rel="me" href="https://mastodon.online/@didier">Paris, France</a></b>. Website originally by <a href="https://exomel.com/" target="_blank">Rémi Prévost</a>, <a href="https://mikemcquaid.com" target="_blank">Mike McQuaid</a> and <a href="https://cargocollective.com/danilalo" target="_blank">Danielle Lalonde</a> and forked from <a href="https://brew.sh" target="_blank">brew.sh</a>. This will by customized eventually 😔. <b>Playdate</b> is a registered trademark of <a href="https://panic.com" target="_blank">Panic</a>.
+      code: Made with ❤️ in Paris, France by <b><a rel="me" href="https://mastodon.gamedev.place/@didier">Didier</a></b>. Original toybox app by <a href="https://github.com/jm">Jeremy</a>. Website originally by <a href="https://exomel.com/" target="_blank">Rémi Prévost</a>, <a href="https://mikemcquaid.com" target="_blank">Mike McQuaid</a> and <a href="https://cargocollective.com/danilalo" target="_blank">Danielle Lalonde</a> and forked from <a href="https://brew.sh" target="_blank">brew.sh</a>. This will by customized eventually 😔. <b>Playdate</b> is a registered trademark of <a href="https://panic.com" target="_blank">Panic</a>.

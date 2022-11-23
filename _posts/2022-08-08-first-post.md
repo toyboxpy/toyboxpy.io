@@ -9,6 +9,6 @@ Welcome to the **toybox.py** website. If the design of the site looks familiar d
 
 The project is heading toward a **0.0.1-alpha** release so I got <a rel="me" href="https://mastodon.social/@toyboxpy">Mastodon</a>, <a href="https://twitter.com/toyboxpy">Twitter</a> and now this website all setup in preparation. Discussions will take place on <a href="https://github.com/toyboxpy/toybox.py/discussions">Github</a>.
 
-I'm really excited about this little project and hopefully contribute something useful to the <a href="https://play.date" target="_blank">Playdate</a> community. I'll post here and on the socials networks when there are any updates.
+I'm really excited about this little project and hopefully contribute something useful to the <a href="https://play.date" target="_blank">Playdate</a> community. I'll post on here when there are any updates.
 
 With ❤️ from Paris, France.
