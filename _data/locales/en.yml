@@ -16,7 +16,8 @@ en:
     fontsampledesc: An example of an asset-only toybox to easily add a font to any project.
     animatedspriteedesc: Sprite class extension with imagetable animation and finite state machine support.
     ldtkdesc: Load tilemaps created with <a href="https://ldtk.io" target="_blank">LDtk</a> in playdate games.
-    toyboxlist: and many more... Check out the complete list on <a href="https://github.com/stars/DidierMalenfant/lists/toyboxes">Github</a> or even better yet <a href="https://github.com/toyboxpy/toybox.py#creating-your-own-toyboxes">create</a> your own <b>toybox</b>.
+    toyboxlist: "and many more... You can see the complete list by typing:"
+    createyourown: You can even <a href="https://github.com/toyboxpy/toybox.py#creating-your-own-toyboxes">create</a> your own <b>toybox</b>.
     doc:
       blog: Official blog
       community: Community discussion

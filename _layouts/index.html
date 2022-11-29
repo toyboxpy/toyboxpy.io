@@ -39,7 +39,7 @@ layout: base
         </div>
         <div class="col-2">
           {% highlight bash %}
-          $ toybox add DidierMalenfant/playbox2d
+          $ toybox add playbox2d
           $ toybox update {% endhighlight %}
           {{ t.pagecontent.then }}
         </div>
@@ -58,6 +58,10 @@ layout: base
           <p>{{ t.pagecontent.playbox2ddesc }}</p>
           <p id="title"><img alt="toyboxpy logo" src="{{ "/assets/img/toybox-449x449.png" | relative_url }}" width="16" height="16"> <a href="https://github.com/DidierMalenfant/pdbase">pdbase</a> (C/Lua)</p>
           <p>{{ t.pagecontent.pdbasedesc }}</p>
+          <p>{{ t.pagecontent.toyboxlist }}</p>
+          <div class="copyable">
+            {%- highlight bash -%} toybox store content {%- endhighlight -%}
+          </div>
         </div>
         <div class="col-2">
           <p><img alt="toyboxpy logo" src="{{ "/assets/img/toybox-449x449.png" | relative_url }}" width="16" height="16"> <a href="https://github.com/NicMagnier/PlaydateLDtkImporter">PlaydateLDtkImporter</a> (Lua)</p>
@@ -68,7 +72,7 @@ layout: base
           <p>{{ t.pagecontent.fontsampledesc }}</p>
         </div>
         <div class="button">
-          <p>{{ t.pagecontent.toyboxlist }}</p>
+          <p>{{ t.pagecontent.createyourown }}</p>
         </div>
       </div>
     </li>
